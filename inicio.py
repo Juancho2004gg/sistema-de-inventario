@@ -68,6 +68,7 @@ image_1 = canvas.create_image(
     image=image_image_1
 )
 
+## boton dashboard
 button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
 button_1 = Button(
