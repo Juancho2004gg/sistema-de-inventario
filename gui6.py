@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\rosit\Escritorio\TEORIA DE SISTEMAS\build\assets\frame2")
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\rosit\Escritorio\TEORIA DE SISTEMAS\build\version2-botones\build\assets\frame6")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -42,133 +42,6 @@ canvas.create_rectangle(
     729.0,
     fill="#D9D9D9",
     outline="")
-
-canvas.create_rectangle(
-    0.0,
-    0.0,
-    248.0,
-    729.0,
-    fill="#008282",
-    outline="")
-
-canvas.create_rectangle(
-    26.0,
-    239.0,
-    224.0,
-    290.0,
-    fill="#D9D9D9",
-    outline="")
-
-canvas.create_rectangle(
-    26.0,
-    314.0,
-    224.0,
-    358.0,
-    fill="#D9D9D9",
-    outline="")
-
-canvas.create_rectangle(
-    26.0,
-    388.0,
-    224.0,
-    433.0,
-    fill="#D9D9D9",
-    outline="")
-
-canvas.create_rectangle(
-    26.0,
-    464.0,
-    224.0,
-    509.0,
-    fill="#D9D9D9",
-    outline="")
-
-canvas.create_rectangle(
-    26.0,
-    548.0,
-    224.0,
-    593.0,
-    fill="#D9D9D9",
-    outline="")
-
-canvas.create_rectangle(
-    26.0,
-    624.0,
-    224.0,
-    669.0,
-    fill="#D9D9D9",
-    outline="")
-
-canvas.create_text(
-    54.0,
-    248.0,
-    anchor="nw",
-    text="Dashboard",
-    fill="#000000",
-    font=("Inter ExtraLightItalic", 25 * -1)
-)
-
-canvas.create_text(
-    62.0,
-    319.0,
-    anchor="nw",
-    text="Inventario",
-    fill="#000000",
-    font=("Inter ExtraLightItalic", 25 * -1)
-)
-
-canvas.create_text(
-    78.0,
-    394.0,
-    anchor="nw",
-    text="Ventas",
-    fill="#000000",
-    font=("Inter ExtraLightItalic", 25 * -1)
-)
-
-canvas.create_text(
-    45.0,
-    470.0,
-    anchor="nw",
-    text="Devoluciones",
-    fill="#000000",
-    font=("Inter ExtraLightItalic", 25 * -1)
-)
-
-canvas.create_text(
-    62.0,
-    552.0,
-    anchor="nw",
-    text="Productos",
-    fill="#000000",
-    font=("Inter ExtraLightItalic", 25 * -1)
-)
-
-canvas.create_text(
-    62.0,
-    629.0,
-    anchor="nw",
-    text="Clientes",
-    fill="#000000",
-    font=("Inter ExtraLightItalic", 25 * -1)
-)
-
-canvas.create_text(
-    48.0,
-    724.0,
-    anchor="nw",
-    text="Cerrar sesión",
-    fill="#FFFFFF",
-    font=("Inter ExtraLightItalic", 25 * -1)
-)
-
-image_image_1 = PhotoImage(
-    file=relative_to_assets("image_1.png"))
-image_1 = canvas.create_image(
-    125.0,
-    116.0,
-    image=image_image_1
-)
 
 canvas.create_rectangle(
     366.0,
@@ -288,6 +161,118 @@ canvas.create_text(
     text="Buscar detalles de venta",
     fill="#FFFFFF",
     font=("Inter Bold", 15 * -1)
+)
+
+canvas.create_rectangle(
+    0.0,
+    0.0,
+    248.0,
+    729.0,
+    fill="#008282",
+    outline="")
+
+image_image_1 = PhotoImage(
+    file=relative_to_assets("image_1.png"))
+image_1 = canvas.create_image(
+    125.0,
+    116.0,
+    image=image_image_1
+)
+
+button_image_1 = PhotoImage(
+    file=relative_to_assets("button_1.png"))
+button_1 = Button(
+    image=button_image_1,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_1 clicked"),
+    relief="flat"
+)
+button_1.place(
+    x=26.0,
+    y=542.0,
+    width=198.0,
+    height=45.0
+)
+
+button_image_2 = PhotoImage(
+    file=relative_to_assets("button_2.png"))
+button_2 = Button(
+    image=button_image_2,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_2 clicked"),
+    relief="flat"
+)
+button_2.place(
+    x=26.0,
+    y=233.0,
+    width=198.0,
+    height=51.0
+)
+
+button_image_3 = PhotoImage(
+    file=relative_to_assets("button_3.png"))
+button_3 = Button(
+    image=button_image_3,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_3 clicked"),
+    relief="flat"
+)
+button_3.place(
+    x=26.0,
+    y=308.0,
+    width=198.0,
+    height=44.0
+)
+
+button_image_4 = PhotoImage(
+    file=relative_to_assets("button_4.png"))
+button_4 = Button(
+    image=button_image_4,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_4 clicked"),
+    relief="flat"
+)
+button_4.place(
+    x=26.0,
+    y=382.0,
+    width=198.0,
+    height=45.0
+)
+
+button_image_5 = PhotoImage(
+    file=relative_to_assets("button_5.png"))
+button_5 = Button(
+    image=button_image_5,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_5 clicked"),
+    relief="flat"
+)
+button_5.place(
+    x=26.0,
+    y=458.0,
+    width=198.0,
+    height=45.0
+)
+
+button_image_6 = PhotoImage(
+    file=relative_to_assets("button_6.png"))
+button_6 = Button(
+    image=button_image_6,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_6 clicked"),
+    relief="flat"
+)
+button_6.place(
+    x=26.0,
+    y=618.0,
+    width=198.0,
+    height=45.0
 )
 window.resizable(False, False)
 window.mainloop()
